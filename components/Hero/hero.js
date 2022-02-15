@@ -45,11 +45,13 @@ export default function Hero() {
 
         <div className={s.second}>
           <div className={s.imgContainer}>
+            <h1>Hi</h1>
             <Image
               src="/1.jpg"
               layout="fill"
               objectFit="contain"
               alt="armchair"
+              className={s.pone}
             />
           </div>
         </div>
