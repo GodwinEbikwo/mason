@@ -151,6 +151,6 @@
 @media (min-width: 1440px) {
   .imgContainer {
     display: block;
-    transform: translateX(105px);
+    transform: translateX(calc(140px - var(--px-2)));
   }
 }
