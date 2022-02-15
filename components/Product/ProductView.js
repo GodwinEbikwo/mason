@@ -5,7 +5,7 @@ export default function ProductView() {
   return (
     <div className={s.root}>
       <div className={s.productTitle}>
-        <h2>ArmChair</h2>
+        <h2>ArmChairs</h2>
       </div>
 
       <section className={s.gridImg}>
