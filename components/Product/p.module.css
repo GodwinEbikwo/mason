@@ -1,0 +1,32 @@
+.root {
+  position: relative;
+  padding: 4rem var(--px-2);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.productTitle {
+  border-top: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  margin-bottom: var(--spacer);
+  padding: 0.25rem 0;
+}
+
+.gridImg {
+  --min: 20ch;
+  --gap: 0.86em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin-bottom: var(--spacer-md);
+}
+
+.gridImg > * {
+  flex: 1 1 var(--min);
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}

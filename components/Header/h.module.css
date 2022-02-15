@@ -1,0 +1,157 @@
+.root {
+  position: relative;
+  padding: 0 var(--px-2);
+  width: 100%;
+}
+
+.navMobileRoot {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.navMobileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem var(--px-2);
+  background-color: var(--bg);
+}
+
+.navFunctions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1 1 0%;
+}
+
+.navFunctions > * + * {
+  margin-left: 1em;
+}
+
+.headertitle {
+  font-size: var(--size-700);
+  pointer-events: none;
+  letter-spacing: var(--ls-md);
+  line-height: 1.2;
+}
+
+.content {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .root {
+    min-height: 29vh;
+  }
+
+  .navMobileRoot {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+
+  .navFunctions {
+    display: none;
+  }
+
+  .content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 6rem;
+  }
+
+  .first,
+  .second,
+  .last {
+    width: 33.333333%;
+  }
+
+  .first {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first p {
+    max-width: 20.5ch;
+    padding-top: 1em;
+  }
+
+  .first::after {
+    position: absolute;
+    height: 0.3rem;
+    width: 9.8rem;
+    content: "";
+    display: block;
+    background: var(--text-color);
+  }
+
+  .second {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: var(--spacer);
+  }
+
+  .second::after {
+    position: absolute;
+    height: 0.3rem;
+    width: 20rem;
+    content: "";
+    display: block;
+    background: var(--text-color);
+  }
+
+  .headertitle {
+    font-size: 3vw;
+    pointer-events: none;
+    letter-spacing: var(--ls-md);
+    line-height: 1.2;
+  }
+
+  .collectionTitle {
+    display: inline-block;
+    padding-top: 1em;
+    text-transform: capitalize;
+  }
+
+  .collectionList {
+    padding-top: 1em;
+  }
+
+  .last {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  .last span {
+    display: inline-block;
+    padding-top: 1em;
+  }
+
+  .last::after {
+    position: absolute;
+    height: 0.3rem;
+    width: 7.2rem;
+    content: "";
+    display: block;
+    background: var(--text-color);
+  }
+
+  .bottom {
+    position: absolute;
+    right: var(--px-2);
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
